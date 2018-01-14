@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+
+// for heroku use process.env.PORT
+const PORT = process.env.PORT || 3000;
 
 let middleware = require('./middleware');
 
